@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öneri & İstek Kutusu | Allen Cafe&Bistro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="oneri.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">Allen Cafe&Bistro</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="menu.html">Menü</a></li>
+                    <li><a href="index.html#about">Hakkımızda</a></li>
+                    <li><a href="index.html#contact">İletişim</a></li>
+                    <li><a href="rezervasyon.html">Rezervasyon</a></li>
+                    <li><a href="oneri.html" class="active">Öneri & İstek Kutusu</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="form-container">
+            <h2>Öneri & İstek Kutusu</h2>
+            <form id="oneriForm">
+                <div class="form-group">
+                    <label for="oneriName">Adınız (isteğe bağlı)</label>
+                    <input type="text" id="oneriName" />
+                </div>
+                <div class="form-group">
+                    <label for="oneriEmail">E-posta (isteğe bağlı)</label>
+                    <input type="email" id="oneriEmail" />
+                </div>
+                <div class="form-group">
+                    <label for="oneriMessage">Öneri veya isteğiniz</label>
+                    <textarea id="oneriMessage" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Gönder</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Allen Cafe&Bistro</p>
+            <p>Sadece rezervasyon ile hizmet verilmektedir.</p>
+            <p>
+                <a href="https://www.instagram.com/suleymanemrearlii/" target="_blank">Instagram</a>
+            </p>
+            <p>Açılış: 08:00 - Kapanış: 23:00</p>
+        </div>
+    </footer>
+    <script>
+    document.getElementById('oneriForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Öneri veya isteğiniz alınmıştır, teşekkür ederiz!');
+        this.reset();
+    });
+    </script>
+</body>
+</html> 

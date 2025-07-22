@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Cafe&Bistro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">Allen Cafe&Bistro</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="menu.html">Menü</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                    <li><a href="rezervasyon.html">Rezervasyon</a></li>
+                    <li><a href="oneri.html">Öneri & İstek Kutusu</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <h1>Kafemize Hoş Geldiniz!</h1>
+            <p class="slogan">"Sadece özel müşterilerimize, rezervasyon ile hizmet veriyoruz."</p>
+            <p style="text-align:center; color:#a0522d; font-size:1.1rem; margin-bottom:1.2rem;">Allen Cafe&Bistro'da ayrıcalıklı ve gizli bir deneyim sizi bekliyor.</p>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="latte.jpg" alt="Kahve" />
+                    <h3>Gurme Kahveler</h3>
+                    <p>Her damak tadına uygun, taze çekilmiş kahve çeşitleri.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="cheesecake.jpg" alt="Tatlı" />
+                    <h3>Tatlı & Atıştırmalık</h3>
+                    <p>Ev yapımı tatlılar ve taptaze atıştırmalıklar ile keyifli anlar.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="salata.jpg" alt="Konforlu Ortam" />
+                    <h3>Konforlu Ortam</h3>
+                    <p>Modern ve rahat atmosferde, dostlarınızla huzurlu sohbetler.</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"Bandırma'da kahve içilecek en güzel yer! Hem ortamı hem de lezzetleri harika."</p>
+                <span>- Müşteri Yorumu</span>
+            </div>
+            <a href="rezervasyon.html" class="cta-btn">Rezervasyon Yap</a>
+        </section>
+        <section id="about" class="section">
+            <h2>Hakkımızda</h2>
+            <p>Kafemiz 2024 yılında kuruldu. Amacımız, misafirlerimize en iyi kahve ve tatlı deneyimini sunmak.</p>
+            <p>2024'ten beri değişmeyen lezzetimiz ve samimi atmosferimizle, Bandırma'nın buluşma noktası olmaktan gurur duyuyoruz. Her fincanda ve her tabakta kaliteyi ve sevgiyi hissedeceksiniz.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>İletişim</h2>
+            <p style="color:#a0522d; font-weight:500;">Rezervasyon için iletişime geçebilirsiniz.</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Adınız" required />
+                <input type="email" id="email" placeholder="E-posta" required />
+                <textarea id="message" placeholder="Mesajınız" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Adres:</strong> hacıyusuf mahallesi valide sokak 2/1 Bandırma Balıkesir</p>
+                <p><strong>Telefon:</strong> 0544 453 0125</p>
+                <p><strong>E-posta:</strong> suleymanarli0666@gmail.com</p>
+            </div>
+        </section>
+    </main>
+    <!-- Rezervasyon Modalı Başlangıç -->
+    <!-- Modal ve ilgili script/style tamamen kaldırıldı -->
+    <!-- Rezervasyon Modalı Bitiş -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Allen Cafe&Bistro</p>
+            <p>Sadece rezervasyon ile hizmet verilmektedir.</p>
+            <p>
+                <a href="https://www.instagram.com/suleymanemrearlii/" target="_blank">Instagram</a>
+            </p>
+            <p>Açılış: 08:00 - Kapanış: 23:00</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Rezervasyon Modalı Aç/Kapat
+    // Basit form gönderimi (geliştirilebilir)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Mesajınız alınmıştır!');
+      this.reset();
+    });
+    </script>
+</body>
+</html>

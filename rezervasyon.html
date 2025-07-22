@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasyon | Allen Cafe&Bistro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rezervasyon.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">Allen Cafe&Bistro</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="menu.html">Menü</a></li>
+                    <li><a href="index.html#about">Hakkımızda</a></li>
+                    <li><a href="index.html#contact">İletişim</a></li>
+                    <li><a href="rezervasyon.html" class="active">Rezervasyon</a></li>
+                    <li><a href="oneri.html">Öneri & İstek Kutusu</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="form-container">
+            <h2>Rezervasyon Yap</h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="resName">Adınız Soyadınız</label>
+                    <input type="text" id="resName" required />
+                </div>
+                <div class="form-group">
+                    <label for="resPhone">Telefon Numaranız</label>
+                    <input type="tel" id="resPhone" required />
+                </div>
+                <div class="form-group">
+                    <label for="resCount">Kişi Sayısı</label>
+                    <input type="number" id="resCount" min="1" max="20" required />
+                </div>
+                <div class="form-group">
+                    <label for="resDate">Tarih ve Saat</label>
+                    <input type="datetime-local" id="resDate" required />
+                </div>
+                <div class="form-group">
+                    <label for="resNote">Notunuz (isteğe bağlı)</label>
+                    <textarea id="resNote"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Rezervasyon Gönder</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Allen Cafe&Bistro</p>
+            <p>Sadece rezervasyon ile hizmet verilmektedir.</p>
+            <p>
+                <a href="https://www.instagram.com/suleymanemrearlii/" target="_blank">Instagram</a>
+            </p>
+            <p>Açılış: 08:00 - Kapanış: 23:00</p>
+        </div>
+    </footer>
+    <script>
+    document.getElementById('reservationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Rezervasyon talebiniz alınmıştır!');
+        this.reset();
+    });
+    </script>
+</body>
+</html> 
